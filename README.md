@@ -1,5 +1,3 @@
-# 💫 About Me:
-Hey I am  — Hashir Ahmad<br><br>🛠 I’m currently working on<br><br>MERN Stack projects (React, Node.js, Express, MongoDB)<br><br>Building web applications at Wrapify Solutions as a MERN Stack Developer<br><br>Features like authentication, blogs, and file uploads<br><br>🤝 I’m looking to collaborate on<br><br>Beginner-friendly MERN projects<br><br>Open-source React & Node.js applications<br><br>🆘 I’m looking for help with<br><br>Writing clean, scalable backend APIs<br><br>Improving React state management<br><br>MongoDB & Express best practices<br><br>🌱 I’m currently learning<br><br>Advanced React (hooks, routing, optimization)<br><br>Backend authentication (JWT)<br><br>REST APIs & database relationships<br><br>💬 Ask me about<br><br>MERN Stack fundamentals<br><br>React components & hooks<br><br>Node.js + Express basics<br><br>⚡ Fun fact<br><br>I love learning by building real-world projects and debugging until it works 🚀
 
 
 ## 🌐 Socials:
