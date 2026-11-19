@@ -1,0 +1,27 @@
+name: 📰 Update README Recent Activity
+
+on:
+  schedule:
+    # Runs every 6 hours
+    - cron: "0 */6 * * *"
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-readme:
+    name: Update Recent Activity
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update README with recent GitHub activity
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # Writes latest 5 public events between the marker comments in README
+          COMMIT_MSG: "chore: auto-update recent activity [skip ci]"
+          MAX_LINES: 5

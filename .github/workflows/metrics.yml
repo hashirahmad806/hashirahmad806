@@ -1,0 +1,33 @@
+name: 📊 GitHub Metrics
+
+on:
+  schedule:
+    # Runs once daily at midnight UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    name: Generate Metrics
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Generate metrics image
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: hashirahmad806
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Karachi
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_topics: yes
+          plugin_topics_limit: 15
+          plugin_stars: yes
+          plugin_stars_limit: 4
+          output_action: commit
+          committer_branch: output
+          filename: github-metrics.svg
